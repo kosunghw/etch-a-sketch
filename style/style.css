@@ -34,9 +34,7 @@ div#container > div > div#col {
     height: 100%;
 }
 
-div#container > div > div#col:hover {
-    background-color: black;
-}
+
 
 .entered {
     background-color: black;

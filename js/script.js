@@ -17,3 +17,9 @@ while (row < 17) {
     row++
 }
 
+let pixels = document.querySelectorAll("#col");
+for (const pixel of pixels) {
+    pixel.addEventListener("mouseenter", (e) => {
+        pixel.classList.add("entered");    
+    });
+}
