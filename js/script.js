@@ -1,6 +1,17 @@
 const container = document.querySelector("#container");
+const btn = document.querySelector("button");
 
+makeGrid(16);
+sketch();
 
+btn.addEventListener("click", () => {
+    let size = prompt("Enter the grid size (Maximum: 100)", "16");
+    if (size != null) {
+        container.innerHTML='';
+        makeGrid(+size);
+        sketch();
+    }
+})
 
 function makeGrid(size) {
 
@@ -21,11 +32,16 @@ function makeGrid(size) {
     }
 }
 
-makeGrid(16);
-
-let pixels = document.querySelectorAll("#col");
-for (const pixel of pixels) {
-    pixel.addEventListener("mouseenter", (e) => {
-        pixel.classList.add("entered");    
-    });
+function entered(e) {
+    e.target.classList.add("entered");
 }
+
+function sketch() {
+    let pixels = document.querySelectorAll("#col");
+    for (const pixel of pixels) {
+        pixel.addEventListener("mouseenter", entered);
+    }
+}
+
+
+
