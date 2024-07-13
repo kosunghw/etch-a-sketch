@@ -1,16 +1,43 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 #container {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    justify-content: center;
+    background-color: grey;
 }
 
 div#container > div {
-    width: 50px;
-    height: 50px;
-    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+div#container > div > div#col {
+    flex-basis: 6.25%;
+    height: 100%;
+}
+
+div#container > div > div#col:hover {
+    background-color: black;
+}
+
+.entered {
+    background-color: black;
 }
