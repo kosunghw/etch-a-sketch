@@ -17,21 +17,22 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 800px;
     justify-content: center;
     background-color: grey;
+    border: solid 40px red;
+    border-radius: 20px;
 }
 
 div#container > div {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 100%;
+    flex: 1 0 auto;
 }
 
 div#container > div > div#col {
-    flex-basis: 6.25%;
-    height: 100%;
+    flex: 1 0 auto;
 }
 
 
