@@ -14,6 +14,22 @@ body {
     align-items: center;
 }
 
+button {
+    width: 9em;
+    height: 3em;
+    border-style: none;
+    border-radius: 2em;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color:rgb(215 225 241);
+}
+
+button:hover {
+    background-color: rgb(177, 188, 204);
+}
+
 .topmargin {
     margin-top: 10px;
 }
@@ -24,8 +40,8 @@ body {
     width: 800px;
     height: 800px;
     justify-content: center;
-    background-color: grey;
-    border: solid 20px red;
+    background-color: rgb(202, 202, 202);
+    border: solid 20px  rgb(215 225 241);
     border-radius: 20px;
 }
 
